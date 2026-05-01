@@ -192,7 +192,9 @@ Total Phase 2 run: **88,190 tokens | $0.55** across 13 depth windows.
 
 **Prerequisites:** Databricks workspace, Anthropic API key, Kaggle account
 
-1. Download `ROP_data.csv` from Kaggle: `https://www.kaggle.com/datasets/ahmedelbashir99/drilling-log-dataset`
+1. Data file included in `data/ROP_data.csv` — derived from Equinor Volve Open Dataset.
+   Original Kaggle source: https://www.kaggle.com/datasets/ahmedelbashir99/drilling-log-dataset
+   Upload to your Databricks Volume before running Phase 1.
 2. Upload to Databricks Volume: `/Volumes/workspace/offset_well_crew/volve_data/`
 3. Ensure `offset-well-intelligence-crew` Silver tables exist in your workspace
 4. Run Phase 1 → Phase 2 → Phase 3 sequentially
